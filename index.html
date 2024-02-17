@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audify</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="setting-panel">
+            <div id="sp-header">
+                <h1>Musify</h1>
+                <img src="images/favicon.svg" alt="">
+            </div>
+            <div id="sp-options">
+                <h2>Profile</h2>
+                <h2>Theme</h2>
+                <h2>Playlist</h2>
+                <h2>Downloads</h2>
+                <h2>Liked Songs</h2>
+            </div>
+        </div>
+        <div id="home">
+            <div id="header">
+                <i class="ri-search-line"></i>
+                <i id="setting" class="ri-menu-3-fill"></i>
+            </div>
+            <div id="song-dets">
+                <h2 id="song-name">Make it Right</h2>
+                <h3 id="singer">BTS</h3>
+    
+                <div id="plane-block">
+                    <div class="circle" id="lowCircle"></div>
+                    <div class="circle" id="mediumCircle"></div>
+                    <div class="circle" id="highCircle"></div>
+                    <div id="plate">
+                    </div>
+                </div>      
+            </div>
+            <div id="player">
+                <div id="song-bar">
+                    <span id="timer">0:00</span>
+                    <input type="range" id="range" min="0" max="100">
+                    <span id="total-time">5:41</span>
+                  </div>
+                  <div id="controls">
+                    <i id="loop" class="ri-loop-left-line ctrl-btn"><span>Loop</span></i>
+                    <i id="backward" class="ri-skip-back-fill ctrl-btn-wh"></i>
+                    <i id="play" class="ri-play-fill ctrl-btn-wh"></i>
+                    <i id="forward" class="ri-skip-forward-fill ctrl-btn-wh"></i>
+                    <i id="like" class="ri-heart-line ctrl-btn"></i>
+                  </div>
+            </div>
+            <div id="open-playlist">
+                <h3>ALL TRACKS</h3>
+            </div>
+        </div>
+        <div id="playlist">
+            <div id="songs-container">
+            </div>
+        </div>
+    </div>
+    <audio src="" crossorigin="anonymous" type="audio/mp3" id="audio" onended="playNext()"></audio>
+    <script src="js/audio-visualizer.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
